@@ -60,12 +60,12 @@ var addTwoNumbers = function(l1, l2) {
   }
 
   while (l1 || l2) {
-    let c = next + ((l1 && l1.val) || 0) + ((l2 && l2.val) || 0);
+    let tmp = next + ((l1 && l1.val) || 0) + ((l2 && l2.val) || 0);
     if (l1) l1 = l1.next;
     if (l2) l2 = l2.next;
 
-    next = ~~(c / 10);
-    assignValue(c % 10);
+    next = ~~(tmp / 10);
+    assignValue(tmp % 10);
   }
 
   if (next > 0) {
