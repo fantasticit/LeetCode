@@ -21,10 +21,10 @@ var twoSum = function(nums, target) {
 
   for (let i = 0; i < nums.length; i++) {
     let num = nums[i];
-    let other = target - num;
+    let b = target - num;
 
-    if (map[other] && map[other] !== i) {
-      return [i, map[other]];
+    if (map[b] && map[b] !== i) {
+      return [i, map[b]];
     }
   }
 
