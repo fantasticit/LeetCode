@@ -1,6 +1,6 @@
 # Leetcode
 
-> 使用 JavaScript 实现
+> ✅ Solutions to LeetCode by JavaScript.
 
 ## 简单
 
