@@ -58,9 +58,3 @@ var climbStairs = function(n) {
 
   return s;
 };
-
-function f(n, next) {
-  if (n < 2) return next;
-
-  return f(n - 1, next + n - 1);
-}
